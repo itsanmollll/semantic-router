@@ -36,3 +36,7 @@ class EncoderDefault(Enum):
             "BEDROCK_EMBEDDING_MODEL", "amazon.titan-embed-image-v1"
         )
     }
+    UNIFYAI = {
+        "embedding_model": os.getenv("UNIFYAI_MODEL_NAME", "unifyai-embed"),
+        "language_model": os.getenv("UNIFYAI_CHAT_MODEL_NAME", "unifyai-chat"),
+    }
